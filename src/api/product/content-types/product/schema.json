@@ -41,22 +41,6 @@
       "repeatable": true,
       "component": "product-related-features.product-related-features"
     },
-    "ProductImages": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "ProductPreviewImage": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "ProductSizes": {
       "type": "string",
       "required": true
@@ -66,6 +50,14 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "products"
+    },
+    "ProductImages": {
+      "type": "text",
+      "required": true
+    },
+    "ProductPreviewImage": {
+      "type": "string",
+      "required": true
     }
   }
 }
